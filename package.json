@@ -1,0 +1,40 @@
+{
+  "name": "electrode-archetype-react-component",
+  "version": "2.0.0",
+  "description": "Archetype - Electrode Component",
+  "homepage": "http://www.electrode.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electrode-io/electrode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/electrode-io/electrode/issues"
+  },
+  "author": {
+    "name": "Arpan Nanavati",
+    "email": "nanavatiarpan@gmail.com",
+    "url": "https://github.com/ananavati"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "archetype": "node_modules/electrode-archetype-react-component"
+  },
+  "main": "archetype-gulpfile.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "electrode-gulp-helper": "^1.0.4",
+    "eslint": "^3.18.0",
+    "eslint-config-walmart": "^1.1.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "gulp": "^3.9.1",
+    "opener": "^1.4.1",
+    "optional-require": "^1.0.0",
+    "package-json-validator": "^0.6.1",
+    "shelljs": "^0.7.0"
+  },
+  "engines": {
+    "node": "^4.2.6 || ^6.2.1 || 7.x.x",
+    "npm": "^3.5.3 || 4.x.x"
+  }
+}
