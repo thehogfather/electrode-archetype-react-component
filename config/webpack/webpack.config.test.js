@@ -2,25 +2,18 @@
 /**
  * Webpack coverage configuration
  */
+const baseProfile = require("./profile.base");
 const testBaseProfile = require("./profile.base.test");
 const generateConfig = require("./util/generate-config");
 const Path = require("path");
 
 function makeConfig() {
-  const testProfile = {
-    partials: {
-      "_sourcemaps-inline": {
-        order: 10100
-      }
-    }
-  };
-
   const options = {
     profiles: {
-      "_test-base": testBaseProfile,
-      _test: testProfile
+      _base: baseProfile,
+      "_test-base": testBaseProfile
     },
-    profileNames: ["_test-base", "_test"],
+    profileNames: ["_base", "_test-base"],
     configFilename: Path.basename(__filename)
   };
 

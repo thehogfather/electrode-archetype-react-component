@@ -21,9 +21,10 @@ const orders = [
   "_uglify",
   "_define",
   "_sourcemaps-remote",
-  "_sourcemaps-inline",
   "_fail",
-  "_coverage"
+  "_coverage",
+  "_dev",
+  "_hot"
 ];
 
 const files = Fs.readdirSync(__dirname).filter((x) => x !== "index.js").map((x) => x.substr(0, x.length - 3));
